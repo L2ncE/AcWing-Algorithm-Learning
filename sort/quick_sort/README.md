@@ -19,3 +19,19 @@
 左右两个指针，往中间走，碰到小于等于x（大于等于x）则停下来。都停下来则交换双方指针并往中间移动一位
 
 直到双方相遇为止
+
+```c++
+void quick_sort(int q[], int l, int r)
+{
+    if (l >= r) return;
+
+    int i = l - 1, j = r + 1, x = q[l + r >> 1];
+    while (i < j)
+    {
+        do i ++ ; while (q[i] < x);
+        do j -- ; while (q[j] > x);
+        if (i < j) swap(q[i], q[j]);
+    }
+    quick_sort(q, l, j), quick_sort(q, j + 1, r);
+}
+```
