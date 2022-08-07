@@ -10,6 +10,7 @@ const int N = 100010;
 int q[N];
 
 void quick_sort(int q[], int l, int r) {
+    // 相遇则已排好序
     if (l >= r) return;
 
     //取边界点，这里取的是中间，指针取两侧
