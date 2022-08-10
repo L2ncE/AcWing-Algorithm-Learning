@@ -7,6 +7,7 @@ using namespace std;
 
 const int N = 100010;
 
+// p[x]表示x的父节点
 int p[N];
 
 int find(int x)
