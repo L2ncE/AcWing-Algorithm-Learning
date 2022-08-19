@@ -12,9 +12,6 @@ int ne[N];
 char s[M], p[N];
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie();
-    cout.tie();
     cin >> n >> (p + 1) >> m >> (s + 1);
 
     for (int i = 2, j = 0; i <= n; i++) {
